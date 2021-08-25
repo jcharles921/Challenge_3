@@ -13,9 +13,10 @@ body{
     height: 100%;
     display: block;
     background-color: white;
+    overflow-y:scroll;
 }
 .header{
-    height: 174px;
+    height: 160px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -76,11 +77,11 @@ body{
 }
 .design1 img{
     margin-top: 110px;
-    width: 1030px;
-    height: 731px;
+    width: 930px;
+    height: 631px;
 }
 .flex1{
-    margin-top: 110px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,7 +271,7 @@ body{
 }
 .flex5{
     width: 1430px;
-    height: 465px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,7 +302,7 @@ body{
 }
 .flex6{
     width: 1430px;
-    height: 465px;
+    height: 345px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,7 +314,7 @@ body{
 .grid6{
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 1314px;
+    width: 375px;
     height: 300px;
     grid-template-rows: 100%;
 }
@@ -438,12 +439,19 @@ width: 100px;
     border-radius: 5px 5px 5px 5px;
 }
 @media only screen and (max-width: 1200px){
+    html{
+        width: 375px;
+        box-sizing: border-box;
+        overflow-y:auto;
+    }
     .header{
-        height: 174px;
+        height: 150px;
         width: 375px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        box-sizing: border-box;
+        overflow-y: hidden;
     }
     #logo{
         width:40%;
@@ -458,6 +466,9 @@ width: 100px;
         margin-right: 15px;
         
     }
+    .par1{
+        width: 375px;
+    }
     .par1 h1{
         padding-left: 13px;
         padding-right: 30px;
@@ -470,13 +481,18 @@ width: 100px;
         height: 114px;
     }
     .par1 button{
-        margin-top: 50px;
+        margin-top: 10px;
         width: 250px;
         height: 53px;
         
     }
+    .design1{
+        
+            height: 259.717px;
+        
+    }
     .design1 img{
-        margin-top: 110px;
+        margin-top: 70px;
         width: 87%;
         height: 87%;
     }
@@ -530,10 +546,12 @@ width: 100px;
         background-image: url('./images/bg-section-top-mobile-1.svg');
         background-repeat: no-repeat;
         margin-bottom: 0px;
+        width: 375px;
         
     }
     .flex2{
         align-items: flex-start;
+        width: 375px;
     }
     .grid2{
         display: grid;
@@ -591,6 +609,7 @@ width: 100px;
     }
     .flex4{
         align-items: flex-start;
+        width: 375px;
     }
     .grid4{
         grid-template-rows: 50% 50%;
@@ -623,6 +642,7 @@ width: 100px;
         display: cover;
         background-repeat: no-repeat;
         margin-bottom: 0px;
+        width: 375px;
         height: 120px;
 
     }
